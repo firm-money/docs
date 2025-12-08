@@ -15,14 +15,14 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://mustangfinance.github.io",
+  url: "https://docs.must.finance",
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "mustangfinance", // Usually your GitHub org/user name.
-  projectName: "mustangfinance.github.io", // Usually your repo name.
+  organizationName: "MustangProtocol", // Usually your GitHub org/user name.
+  projectName: "mustang-docs", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
@@ -44,9 +44,7 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/mustangfinance/mustangfinance.github.io",
+          editUrl: "https://github.com/MustangProtocol/mustang-docs/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -77,7 +75,7 @@ const config = {
             label: "Docs",
           },
           {
-            href: "https://github.com/mustangfinance/mustang-docs",
+            href: "https://github.com/MustangProtocol/mustang-docs",
             label: "GitHub",
             position: "right",
           },
@@ -104,11 +102,11 @@ const config = {
             items: [
               {
                 label: "Github",
-                href: "https://github.com/mustangfinance/mustang",
+                href: "https://github.com/MustangProtocol/must-finance",
               },
               {
                 label: "Discord",
-                href: "https://discord.gg/5h3avBYxcn",
+                href: "https://discord.gg/sagaxyz",
               },
               {
                 label: "X",

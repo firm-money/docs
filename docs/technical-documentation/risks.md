@@ -12,11 +12,17 @@ See a list of audit reports here: https://github.com/MustangProtocol/audit-repor
 
 Underlying Liquity contracts are audited and secure. Mustang Finance Protocol is a fork of Liquity and inherits most of the same risks and security considerations, but with several differences.
 
-Mustang Finance protocol contracts (and all changes from the Liquity core contracts) are audited by Sherlock, 0xSimao and other independent auditors.
+Mustang Finance protocol contracts (and all changes from the Liquity core contracts) have undergone multiple comprehensive security audits:
 
-Mustang Finance audits: 
-- [Report: Sherlock audit with 0xSimao](https://drive.google.com/file/d/1knlIgoEGv5x33n9mhTLRqJe8T55r3HCy/view?usp=sharing)
-- Mustang Finance also underwent extensive testing with automated vulnerability testing with [Octane](https://octane.security/), with reports available for each pull request on our Github.
+### Security Audits
+
+- **August 23, 2025:** [Mustang Security Review](https://github.com/MustangProtocol/audit-reports/blob/main/Mustang-security-review_2025-08-23.pdf)
+- **September 22, 2025:** [Mustang Security Review](https://github.com/MustangProtocol/audit-reports/blob/main/Mustang-security-review_2025-09-22.pdf)
+- **November 30, 2025:** [Mustang Audit - Shred Security](https://github.com/ShredSecurity/audits/blob/main/private_reviews/Mustang-Audit-Shred-11-2025.pdf)
+
+Mustang Finance code has been audited by Pashov Audit Group and several independent auditors. The protocol also underwent extensive testing with automated vulnerability testing by [Octane Security](https://octane.security/), with reports available for each pull request on our [GitHub repository](https://github.com/MustangProtocol/must-finance).
+
+For a complete list of all audit reports, visit our [audit-reports repository](https://github.com/MustangProtocol/audit-reports/tree/main).
 
 
 ## Centralization Risk
