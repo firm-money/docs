@@ -104,9 +104,9 @@ Once your assets arrive on Saga chain:
 
 ## Need Help?
 
-- Join the [Mustang Finance Discord](https://discord.gg/5h3avBYxcn) for community support
+- Join the [Mustang Finance Discord](https://discord.gg/sagaxyz) for community support
 - Check the [Squid Router documentation](https://docs.squidrouter.com)
-- Visit our [GitHub](https://github.com/mustangfinance/mustang) for technical questions
+- Visit our [GitHub](https://github.com/MustangProtocol/must-finance) for technical questions
 
 ---
 
