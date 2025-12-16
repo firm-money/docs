@@ -15,7 +15,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://docs.must.finance",
+  url: "https://docs.usf.money",
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
 
