@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Bridging to Saga Chain
 
-This guide explains how to bridge assets from other chains to Saga chain to use with Mustang Finance.
+This guide explains how to bridge assets from other chains to Saga chain to use with Firm Finance.
 
 ## Using Squid Router (Recommended)
 
@@ -39,7 +39,7 @@ Squid Router is the easiest way to bridge assets to Saga from 70+ supported chai
 Common tokens you can bridge to Saga:
 - **USDC** (recommended for stablecoins)
 - **USDT**
-- **ETH** (can be wrapped to WETH for borrowing with Mustang Finance)
+- **ETH** (can be wrapped to WETH for borrowing with Firm Finance)
 - **WBTC** (can be bridged as tBTC on Saga for borrowing)
 - **SAGA** (native token for borrowing)
 - Most major ERC-20 tokens with sufficient liquidity
@@ -77,11 +77,11 @@ Once your assets arrive on Saga chain:
    - Chain ID: `5464`
    - Currency Symbol: SAGA
 
-2. **Start Using Mustang Finance**:
+2. **Start Using Firm Finance**:
    - Visit [app.must.finance](https://app.must.finance/)
    - Connect your wallet
-   - Use your bridged assets as collateral to mint MUST stablecoin
-   - Deposit MUST in stability pools to earn yield
+   - Use your bridged assets as collateral to mint FIRM stablecoin
+   - Deposit FIRM in stability pools to earn yield
 
 ## Troubleshooting
 
@@ -104,9 +104,9 @@ Once your assets arrive on Saga chain:
 
 ## Need Help?
 
-- Join the [Mustang Finance Discord](https://discord.gg/sagaxyz) for community support
+- Join the [Firm Finance Discord](https://discord.gg/sagaxyz) for community support
 - Check the [Squid Router documentation](https://docs.squidrouter.com)
-- Visit our [GitHub](https://github.com/MustangProtocol/must-finance) for technical questions
+- Visit our [GitHub](https://github.com/firm-money/firm) for technical questions
 
 ---
 

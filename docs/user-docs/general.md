@@ -5,16 +5,16 @@ sidebar_position: 1
 
 # General
 
-### What is Mustang Finance?
-Mustang Finance is a decentralized borrowing protocol that lets users deposit WETH, tBTC, SAGA, stATOM, KING, yETH, and yUSD as collateral, and mint the stablecoin MUST at an interest rate depositors choose. Mustang Finance is a Liquity V2 fork built specifically for the Saga EVM.
+### What is Firm Finance?
+Firm Finance is a decentralized borrowing protocol that lets users deposit WETH, tBTC, SAGA, stATOM, KING, yETH, and yUSD as collateral, and mint the stablecoin FIRM at an interest rate depositors choose. Firm Finance is a Liquity V2 fork built specifically for the Saga EVM.
 
-### The main use-cases for Mustang Finance are:
+### The main use-cases for Firm Finance are:
 
-- Borrow MUST
+- Borrow FIRM
 - 1-click multiply exposure to collateral assets
-- Earn yield by depositing MUST in the stability pool or farming elsewhere
+- Earn yield by depositing FIRM in the stability pool or farming elsewhere
 
-To understand Mustang Finance it's helpful to understand [Liquity](https://www.liquity.org) 
+To understand Firm Finance it's helpful to understand [Liquity](https://www.liquity.org) 
 
 
 :::tip
@@ -32,7 +32,7 @@ To understand Mustang Finance it's helpful to understand [Liquity](https://www.l
 |Redemption of stablecoins for underlying collateral maintains the $1.00 peg no matter what| Troves are now transferable|
 |ETH Mainnet Only|V1’s code was free and open-sourced (FOSS), while with V2, Liquity will have its code set as a business source license (BUSL)|
 
-### Mustang Finance vs Liquity V2
+### Firm Finance vs Liquity V2
 | Key Differences | Description  |
 |--|--|
 | **Blockchain** | Saga EVM (Chain ID: 5464) vs Ethereum Mainnet |
@@ -42,8 +42,8 @@ To understand Mustang Finance it's helpful to understand [Liquity](https://www.l
 | **Security Features** | Additional security features including debt limits per collateral type |
 | **EVM Version** | Built for Saga's EVM version vs Cancun EVM (Liquity V2) |
 
-## Does Mustang Finance have governance?
-Mustang Finance has governance that can manage specific protocol parameters including:
+## Does Firm Finance have governance?
+Firm Finance has governance that can manage specific protocol parameters including:
 - Distributing Protocol Liquidity Incentives (PIL)
 - Directing protocol revenue to external initiatives
 - Managing fees, LTV requirements, and minimum debt thresholds
@@ -55,8 +55,8 @@ Governance operates with a manual incentive direction system, replacing Liquity'
 
 ## Other Helpful Resources:
 
-Mustang Github:
-https://github.com/MustangProtocol/must-finance
+Firm Github:
+https://github.com/firm-money/firm
 
 Block explorer for Saga EVM:
 https://sagaevm.sagaexplorer.io/

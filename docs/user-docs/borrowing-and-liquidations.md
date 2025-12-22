@@ -4,16 +4,16 @@ sidebar_position: 2
 
 # Borrowing and Liquidations
 
-### What makes borrowing on Mustang so unique?
+### What makes borrowing on Firm so unique?
 
-Mustang allows users to borrow the stablecoin USND on their own terms. Borrowers can choose and adjust the rate they are willing to pay for their loans. Borrowers can choose to pay 0%, 5%, 20%, etc.. Borrowers will establish market rates in accordance with their individual risk tolerance without relying on governance or algorithm rate management. Each collateral also has its own respective borrow market which allows room for a market of rates to develop.
+Firm allows users to borrow the stablecoin USND on their own terms. Borrowers can choose and adjust the rate they are willing to pay for their loans. Borrowers can choose to pay 0%, 5%, 20%, etc.. Borrowers will establish market rates in accordance with their individual risk tolerance without relying on governance or algorithm rate management. Each collateral also has its own respective borrow market which allows room for a market of rates to develop.
 
 All of this makes for a highly capital efficient, secure and decentralized borrowing experience.
 
 ### What is a Trove?
 
-When a borrower deposits collateral (WETH, tBTC, SAGA, etc) a Trove is created.
-A **Trove** is Mustang's version of a 'vault'. Each Trove has a particular Ethereum address owner, and each owner can have multiple Troves.
+When a borrower deposits collateral (ETH, wstETH, rETH, SNT, etc) a Trove is created.
+A **Trove** is Firm's version of a 'vault'. Each Trove has a particular Ethereum address owner, and each owner can have multiple Troves.
 
 Each Trove can only have 1 type of collateral deposited in it.
 ```mermaid
@@ -42,19 +42,13 @@ Each Trove allows you to manage a loan, adjusting collateral and debt values as 
 
 Troves are also transferable NFTs, and can be found in the wallet of the owner. Be cautious with this: transferring the NFT also transfers the ownership of the position.
 
-### What types of collateral can I use on Mustang?
+### What types of collateral can I use on Firm?
 
-Mustang works with the following collaterals: 
-- WETH (Wrapped Ether)
-- rsETH (Kelp Ether)
-- tBTC (Threshold Bitcoin)
-- SAGA (Wrapped SAGA)
-
-**Additional Collaterals:**
-- stATOM (Staked ATOM)
-- KING
-- yETH (Yearn ETH)
-- yUSD
+Firm works with the following collaterals: 
+- ETH (Ether)
+- wstETH (Wrapped Staked ETH)
+- rETH (Rocket Pool ETH)
+- SNT (Status Network Token)
 
 :::tip
 New collateral types can be added by governance. Existing ones can be removed, although users will always have the ability to withdraw their positions in the case of a collateral being removed. 
@@ -87,13 +81,13 @@ Please note that these examples are for illustration purposes only and do not re
 If your LTV becomes too high, your position will be liquidated.
 > LTV = Loan to Value a LTV of 50% means that if you borrowed $100, your collateral is $200.
 
-### How do Liquidations work in Mustang?
+### How do Liquidations work in Firm?
 
-Mustang uses Tellor oracles to maintain proper price feeds for our collaterals. Check out the [oracles](/docs/technical-documentation/oracles) section for more info.
+Firm uses Tellor oracles to maintain proper price feeds for our collaterals. Check out the [oracles](/docs/technical-documentation/oracles) section for more info.
 
 Troves get liquidated if the LTV goes above the maximum value.
 
-Mustang uses Stability Pools as its primary liquidation mechanism to absorb liquidated debt and collateral. Each borrow-market has its own dedicated Stability Pool earning liquidation gains (in the respective collateral) in exchange for burning debt. That means Stability Pool depositors earn 100% of the fees from liquidations on the protocol, and earn those fees in the liquidated collateral (for example, ETH).
+Firm uses Stability Pools as its primary liquidation mechanism to absorb liquidated debt and collateral. Each borrow-market has its own dedicated Stability Pool earning liquidation gains (in the respective collateral) in exchange for burning debt. That means Stability Pool depositors earn 100% of the fees from liquidations on the protocol, and earn those fees in the liquidated collateral (for example, ETH).
 
 Just-In-Time liquidations and a redistribution of debt and collateral across borrowers of the same market handle liquidations as a last resort if the Stability Pool were ever empty.
 
@@ -101,9 +95,8 @@ A liquidated borrower usually incurs a penalty of 5% and will be able to claim t
 
 A special case is when a Redistribution is necessary, then:
 
-* For WETH, the loss amounts to 10% of the debt (at most). That corresponds to a max. loss of 9.09% expressed in terms of collateral.
-* For tBTC/stATOM the loss is 20% of the debt, corresponding to a max. loss of 16.67% expressed in terms of collateral.
-* For SAGA the loss is higher due to increased volatility risk.
+* For ETH, wstETH, and rETH, the loss amounts to 10% of the debt (at most). That corresponds to a max. loss of 9.09% expressed in terms of collateral.
+* For SNT the loss is higher due to increased volatility risk.
 
 ![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FhaTvXYC1FTrAwmfXQZ14%252Fliqtable.png%3Falt%3Dmedia%26token%3Da2ab7753-5fd6-4741-8c43-871fc704aa1a&width=768&dpr=4&quality=100&sign=fba442d0&sv=2)
 
@@ -119,13 +112,10 @@ The `0.0375 WETH` equivalent is funded by a [refundable gas deposit](borrowing-a
 
 That depends on the collateral type you will use:
 
-- WETH: 90.91% LTV (110% MCR)
-- tBTC: 83.33% LTV (120% MCR)
-- SAGA: 71.43% LTV (140% MCR)
-- stATOM: 80% LTV (125% MCR)
-- KING: 66.67% LTV (150% MCR)
-- yETH: 83.33% LTV (120% MCR)
-- yUSD: 86.96% LTV (115% MCR)
+- ETH: 90.91% LTV (110% MCR)
+- wstETH: 90.91% LTV (110% MCR)
+- rETH: 90.91% LTV (110% MCR)
+- SNT: 62.50% LTV (160% MCR)
 
 ### What is the refundable gas deposit?
 
@@ -133,13 +123,13 @@ To open a new Trove, the protocol requires a liquidation reserve of 0.0375 ETH r
 
 ### How much will I pay for my loan?
 
-On Mustang, there are no upfront fees. Instead, you pay interest on an ongoing basis, making it suitable for short-term loans as well. When creating a new position or increasing the amount borrowed, borrowers pay the first week of interest up front to prevent the protocol from leaking value to arbitrage bots.
+On Firm, there are no upfront fees. Instead, you pay interest on an ongoing basis, making it suitable for short-term loans as well. When creating a new position or increasing the amount borrowed, borrowers pay the first week of interest up front to prevent the protocol from leaking value to arbitrage bots.
 
 The interest you pay is determined by the rate you set yourself. For example, if you borrow 10,000 USND at a 5% interest rate, you'll pay \~500 USND in interest after one year. This interest is added to your outstanding debt.
 
 ### What are user-set rates?
 
-On Mustang, users set their own interest rates, giving them full control over costs and improving predictability. This feature allows for adaptability to various market conditions and helps stabilize USND's peg.
+On Firm, users set their own interest rates, giving them full control over costs and improving predictability. This feature allows for adaptability to various market conditions and helps stabilize USND's peg.
 
 User-set interest rates facilitate a capital-efficient equilibrium between USND borrowers and holders in a fully market-driven manner. Additionally, these rates serve as the primary revenue source for USND holders, generating a continuous, sustainable real yield for USND depositors and liquidity providers.
 
@@ -206,25 +196,25 @@ Please note that more advanced strategies like 'selling' Troves on secondary mar
 
 ### How do I loop my exposure?
 
-Looping allows you to borrow MUST against your deposited collateral (WETH, tBTC, or SAGA) and use it to buy more collateral, increasing your exposure to the underlying asset. Mustang Finance has built-in automation to achieve this with one click (zappers).
+Looping allows you to borrow FIRM against your deposited collateral (ETH, wstETH, rETH, or SNT) and use it to buy more collateral, increasing your exposure to the underlying asset. Firm has built-in automation to achieve this with one click (zappers).
 
 Make sure you choose a frontend that supports this functionality, and be mindful of liquidity/slippage.
 
 ### How are collateral risks mitigated?
 
-Mustang Finance has separate borrow markets for each collateral type with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (WETH, tBTC, SAGA, stATOM, KING, yETH, yUSD).
+Firm has separate borrow markets for each collateral type with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (ETH, wstETH, rETH, SNT).
 
 Risks are mitigated through temporary borrowing restrictions in times of low collateralization of a given market, a redemption logic prioritizing  collateral with less Stability Pool backing, and a collateral shutdown as an emergency measure to maintain system balance and protect against market instability.
 
-Keep in mind that despite all these measures, MUST remains dependent on the supported collateral assets and there is no strict guarantee that it remains overcollateralized in case of a sudden collapse of a collateral asset.
+Keep in mind that despite all these measures, FIRM remains dependent on the supported collateral assets and there is no strict guarantee that it remains overcollateralized in case of a sudden collapse of a collateral asset.
 
 ### How does the system compartmentalize risk among different LSTs? 
 
 This depends on the party in question:
 
 * Borrowers: Collateral risk is limited to the collateral asset held by the borrower. A borrower isn't negatively affected by a failure of another collateral asset.
-* MUST Holders: As a multi-collateral stablecoin, MUST is reliant on effective liquidations of undercollateralized loans in every borrow market to remain overcollateralized. Holders are subject to the risks of all supported collateral assets.
-* Earners: Stability Pool depositors only get exposure to the asset they have opted for. However, as MUST holders, they are similarly affected by potential depegging.
+* FIRM Holders: As a multi-collateral stablecoin, FIRM is reliant on effective liquidations of undercollateralized loans in every borrow market to remain overcollateralized. Holders are subject to the risks of all supported collateral assets.
+* Earners: Stability Pool depositors only get exposure to the asset they have opted for. However, as FIRM holders, they are similarly affected by potential depegging.
 
 ### What mechanisms are in place if the Stability Pool is empty?
 
@@ -232,8 +222,8 @@ If the Stability Pool doesn't cover the full entire debt and gets completely emp
 
 The liquidator can freely choose between two fallback liquidation modes for the debt exceeding the funds in the Stability Pool:
 
-1. Just-in-time (JIT) liquidation: the liquidator sends an amount of MUST corresponding to the (remaining) debt in exchange for 105% of its nominal value in the collateral asset.
+1. Just-in-time (JIT) liquidation: the liquidator sends an amount of FIRM corresponding to the (remaining) debt in exchange for 105% of its nominal value in the collateral asset.
 2. Redistribution: the liquidator triggers a redistribution, through which the Trove's entire debt and collateral is redistributed to all fellow borrowers of the respective collateral market, in proportion to their own collateral amounts. Thus, the respective borrowers will receive a share of the liquidated collateral and see their debts increase proportionally.
 
 ### Shutdown Borrow Markets
-The system may shut down borrow markets whose total collateralization ratio (TCR) falls below the minimum threshold for each collateral type (110% for WETH, 120% for tBTC/stATOM, 140% for SAGA). The shutdown is performed by incentivizing redemptions against the respective collateral.
+The system may shut down borrow markets whose total collateralization ratio (TCR) falls below the minimum threshold for each collateral type (110% for ETH, wstETH, and rETH, 160% for SNT). The shutdown is performed by incentivizing redemptions against the respective collateral.

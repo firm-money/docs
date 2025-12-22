@@ -5,11 +5,11 @@ sidebar_position: 5
 # Governance
 
 :::warning
-**Mustang Finance currently has no governance token available. Please be cautious of scams.** 
+**Firm Finance currently has no governance token available. Please be cautious of scams.** 
 :::
 
 Governance do NOT have the power to:
-- Mint new MUST or control user Troves.
+- Mint new FIRM or control user Troves.
 - Upgrade the protocol contracts.
 - Change the split or behavior of protocol interest payment fees.
 
