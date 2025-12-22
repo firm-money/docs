@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Mustang Finance Protocol Documentation",
-  tagline: "Your CDP for the open range.",
+  title: "Firm Finance Documentation",
+  tagline: "Keep FIRM through the swings.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -21,8 +21,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "MustangProtocol", // Usually your GitHub org/user name.
-  projectName: "mustang-docs", // Usually your repo name.
+  organizationName: "firm-money", // Usually your GitHub org/user name.
+  projectName: "firm-finance-docs", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
@@ -44,7 +44,7 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          editUrl: "https://github.com/MustangProtocol/mustang-docs/tree/main/",
+          editUrl: "https://github.com/firm-money/docs/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -62,9 +62,9 @@ const config = {
       // Replace with your project's social card
       image: "img/mustang-social-card.jpg",
       navbar: {
-        // title: "Mustang Finance",
+        // title: "Firm Finance",
         logo: {
-          alt: "Mustang Finance Logo",
+          alt: "Firm Finance Logo",
           src: "/img/logo.svg",
         },
         items: [
@@ -75,7 +75,7 @@ const config = {
             label: "Docs",
           },
           {
-            href: "https://github.com/MustangProtocol/mustang-docs",
+            href: "https://github.com/firm-money/docs",
             label: "GitHub",
             position: "right",
           },
@@ -102,7 +102,7 @@ const config = {
             items: [
               {
                 label: "Github",
-                href: "https://github.com/MustangProtocol/must-finance",
+                href: "https://github.com/firm-money/firm",
               },
               {
                 label: "Discord",

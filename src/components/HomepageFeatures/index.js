@@ -6,38 +6,38 @@ import Translate from '@docusaurus/Translate';
 const FeatureList = [
   {
     title: <Translate id="feature.redeemable.title">Redeemable</Translate>,
-    Svg: require('@site/img/orange_no_bg.png').default,
+    icon: '/img/butterfly-simple-gold.svg',
     description: (
       <>
-        <Translate id="feature.redeemable.desc">Each stablecoin issued by Mustang Finance is redeemable for $1 of collateral in the system.</Translate>
+        <Translate id="feature.redeemable.desc">Each stablecoin issued by Firm Finance is redeemable for $1 of collateral in the system.</Translate>
       </>
     ),
   },
   {
     title: <Translate id="feature.streamable.title">Saga Native</Translate>,
-    Svg: require('@site/img/purple_no_bg.png').default,
+    icon: '/img/butterfly-simple-burgundy.svg',
     description: (
       <>
-        <Translate id="feature.streamable.desc">MUST is built natively for the Saga EVM.</Translate>
+        <Translate id="feature.streamable.desc">FIRM is built natively for the Saga EVM.</Translate>
       </>
     ),
   },
   {
     title: <Translate id="feature.sustainable.title">Sustainable</Translate>,
-    Svg: require('@site/img/yellow_no_bg.png').default,
+    icon: '/img/butterfly-simple.svg',
     description: (
       <>
-        <Translate id="feature.sustainable.desc">MUST yield is sustainable and comes from multiple sources. 100% of protocol revenue is directed towards users.</Translate>
+        <Translate id="feature.sustainable.desc">FIRM yield is sustainable and comes from multiple sources. 100% of protocol revenue is directed towards users.</Translate>
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({icon, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <img src={Svg} className={styles.featureSvg} role="img" />
+        <img src={icon} className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

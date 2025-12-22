@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Oracles
 
-Mustang Finance uses Tellor oracles as its price feed solution on Saga EVM. Tellor provides decentralized, censorship-resistant price data with frequent updates to ensure accurate collateral valuations and liquidation calculations.
+Firm Finance uses Tellor oracles as its price feed solution on Saga EVM. Tellor provides decentralized, censorship-resistant price data with frequent updates to ensure accurate collateral valuations and liquidation calculations.
 
 To learn more about Tellor check out this website here: https://tellor.io/
 
@@ -33,11 +33,11 @@ All oracles have a 5-hour staleness threshold (4-hour heartbeat + 1-hour buffer)
 
 ## Oracle Provider
 
-- **Tellor**: Decentralized oracle network providing censorship-resistant price feeds for all Mustang Finance collaterals
+- **Tellor**: Decentralized oracle network providing censorship-resistant price feeds for all Firm Finance collaterals
 
 ## Usage
 
-These oracles are used as part of the PriceFeeds in the Mustang Finance protocol for:
+These oracles are used as part of the PriceFeeds in the Firm Finance protocol for:
 - Collateral valuation
 - Liquidation calculations
 - Risk management

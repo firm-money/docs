@@ -26,16 +26,15 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to={userDocsUrl}>
-            <Translate id="homepage.userDocs">Mustang Finance User Docs</Translate>
+            <Translate id="homepage.userDocs">Firm Finance User Docs</Translate>
           </Link>
         </div>
-        <br />
         <br />
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to={techDocsUrl}>
-            <Translate id="homepage.technicalDocs">Mustang Finance Technical Docs</Translate>
+            <Translate id="homepage.technicalDocs">Firm Finance Technical Docs</Translate>
           </Link>
         </div>
       </div>
@@ -48,7 +47,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title} Documentation`}
-      description="Learn about Mustang Finance.">
+      description="Learn about Firm Finance.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
