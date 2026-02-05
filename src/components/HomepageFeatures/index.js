@@ -6,7 +6,7 @@ import Translate from '@docusaurus/Translate';
 const FeatureList = [
   {
     title: <Translate id="feature.redeemable.title">Redeemable</Translate>,
-    icon: '/img/butterfly-simple-gold.svg',
+    icon: '/img/f1.svg',
     description: (
       <>
         <Translate id="feature.redeemable.desc">Each stablecoin issued by Firm Finance is redeemable for $1 of collateral in the system.</Translate>
@@ -14,17 +14,17 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate id="feature.streamable.title">Saga Native</Translate>,
-    icon: '/img/butterfly-simple-burgundy.svg',
+    title: <Translate id="feature.streamable.title">Status Native</Translate>,
+    icon: '/img/f2.svg',
     description: (
       <>
-        <Translate id="feature.streamable.desc">FIRM is built natively for the Saga EVM.</Translate>
+        <Translate id="feature.streamable.desc">FIRM is built natively for the Status Network.</Translate>
       </>
     ),
   },
   {
     title: <Translate id="feature.sustainable.title">Sustainable</Translate>,
-    icon: '/img/butterfly-simple.svg',
+    icon: '/img/f3.svg',
     description: (
       <>
         <Translate id="feature.sustainable.desc">FIRM yield is sustainable and comes from multiple sources. 100% of protocol revenue is directed towards users.</Translate>

@@ -24,65 +24,91 @@
   --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
   --ifm-heading-font-family: 'Geist', system-ui, -apple-system, sans-serif;
   --ifm-font-family-monospace: 'Geist Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
-  
-  /* Firm color palette */
-  --firm-gold-500: #F2B341;
+
+  /* Firm color palette - Blue/Yellow dark theme */
+  --firm-blue-500: #2256FC;
+  --firm-blue-600: #1B45CA;
+  --firm-blue-700: #143497;
+  --firm-blue-400: #4777FF;
+  --firm-blue-300: #7599FF;
+  --firm-blue-800: #0E2365;
+  --firm-blue-900: #071132;
+
+  --firm-gold-500: #F2B342;
   --firm-gold-600: #E09B1F;
-  --firm-gold-700: #B67A18;
   --firm-gold-400: #F6CF7F;
-  --firm-gold-300: #F9DB9F;
-  --firm-gold-200: #FBE7BF;
-  
-  --firm-beige-200: #EDDBC5;
-  --firm-beige-300: #E5C5A0;
-  --firm-beige-100: #F5F1EB;
-  
-  --firm-burgundy-800: #7F0A07;
-  --firm-burgundy-700: #A0211B;
-  --firm-burgundy-600: #C82A23;
-  
-  --firm-dark-green: #253D2F;
-  
-  /* Primary color (Gold) - darker shades for better readability */
-  --ifm-color-primary: #B67A18;
-  --ifm-color-primary-dark: #8C5C12;
-  --ifm-color-primary-darker: #623E0C;
-  --ifm-color-primary-darkest: #382206;
-  --ifm-color-primary-light: #E09B1F;
-  --ifm-color-primary-lighter: #F2B341;
-  --ifm-color-primary-lightest: #F6CF7F;
-  
-  /* Background colors (Beige) */
-  --ifm-background-color: #EDDBC5;
-  --ifm-background-surface-color: #FFFFFF;
-  
+
+  --firm-dark-background: #141821;
+  --firm-dark-surface: #1C2029;
+  --firm-dark-surface-alt: #242830;
+
+  /* Primary color (Blue) */
+  --ifm-color-primary: #2256FC;
+  --ifm-color-primary-dark: #1B45CA;
+  --ifm-color-primary-darker: #143497;
+  --ifm-color-primary-darkest: #0E2365;
+  --ifm-color-primary-light: #4777FF;
+  --ifm-color-primary-lighter: #7599FF;
+  --ifm-color-primary-lightest: #A3BBFF;
+
+  /* Background colors (Dark) */
+  --ifm-background-color: #141821;
+  --ifm-background-surface-color: #1C2029;
+
   /* Text colors */
-  --ifm-font-color-base: #7F0A07;
-  --ifm-heading-color: #253D2F;
-  
+  --ifm-font-color-base: #FFFFFF;
+  --ifm-heading-color: #FFFFFF;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #141821;
+  --ifm-navbar-link-color: #FFFFFF;
+  --ifm-navbar-link-hover-color: #4777FF;
+
+  /* Footer */
+  --ifm-footer-background-color: #0E1117;
+  --ifm-footer-color: #FFFFFF;
+  --ifm-footer-link-color: #A3BBFF;
+  --ifm-footer-link-hover-color: #4777FF;
+
+  /* Cards and surfaces */
+  --ifm-card-background-color: #1C2029;
+  --ifm-card-border-radius: 8px;
+
+  /* Menu */
+  --ifm-menu-color: #FFFFFF;
+  --ifm-menu-color-active: #4777FF;
+  --ifm-menu-color-background-active: rgba(34, 86, 252, 0.1);
+
+  /* Table of contents */
+  --ifm-toc-link-color: #A3BBFF;
+
+  /* Borders */
+  --ifm-hr-background-color: #0E2365;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(242, 179, 65, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(34, 86, 252, 0.15);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode is now the default - light mode uses same colors */
 [data-theme='dark'] {
-  /* Primary color (Gold) - slightly adjusted for dark mode */
-  --ifm-color-primary: #F6CF7F;
-  --ifm-color-primary-dark: #F2B341;
-  --ifm-color-primary-darker: #E09B1F;
-  --ifm-color-primary-darkest: #B67A18;
-  --ifm-color-primary-light: #F9DB9F;
-  --ifm-color-primary-lighter: #FBE7BF;
-  --ifm-color-primary-lightest: #FDF3DF;
-  
+  /* Primary color (Blue) */
+  --ifm-color-primary: #4777FF;
+  --ifm-color-primary-dark: #2256FC;
+  --ifm-color-primary-darker: #1B45CA;
+  --ifm-color-primary-darkest: #143497;
+  --ifm-color-primary-light: #7599FF;
+  --ifm-color-primary-lighter: #A3BBFF;
+  --ifm-color-primary-lightest: #D1DDFF;
+
   /* Background for dark mode */
-  --ifm-background-color: #22120A;
-  --ifm-background-surface-color: #4A2D14;
-  
+  --ifm-background-color: #141821;
+  --ifm-background-surface-color: #1C2029;
+
   /* Text colors for dark mode */
-  --ifm-font-color-base: #EDDBC5;
-  
-  --docusaurus-highlighted-code-line-bg: rgba(242, 179, 65, 0.2);
+  --ifm-font-color-base: #FFFFFF;
+  --ifm-heading-color: #FFFFFF;
+
+  --docusaurus-highlighted-code-line-bg: rgba(34, 86, 252, 0.2);
 }
 
 .navbar__logo {
@@ -90,5 +116,57 @@
 }
 
 .hero__subtitle {
-  color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+/* Sidebar styling */
+.menu__link {
+  color: #E8EEFF;
+}
+
+.menu__link:hover {
+  color: #4777FF;
+  background-color: rgba(34, 86, 252, 0.1);
+}
+
+.menu__link--active {
+  color: #4777FF !important;
+}
+
+/* Breadcrumbs */
+.breadcrumbs__link {
+  color: #A3BBFF;
+}
+
+/* Code blocks */
+.prism-code {
+  background-color: #1C2029 !important;
+}
+
+/* Table styling */
+table {
+  border-color: #0E2365;
+}
+
+th {
+  background-color: #1C2029;
+}
+
+/* Admonitions */
+.alert {
+  background-color: #1C2029;
+  border-color: #0E2365;
+}
+
+/* Secondary button styling */
+.button--secondary {
+  background-color: #F2B342;
+  color: #141821;
+  border-color: #F2B342;
+}
+
+.button--secondary:hover {
+  background-color: #E09B1F;
+  color: #141821;
+  border-color: #E09B1F;
 }

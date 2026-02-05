@@ -8,15 +8,15 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #F2B341;
-  background-image: url('/img/butterfly.png');
-  background-size: auto 100%;
+  background-color: #2256FC;
+  background-image: url('/img/stamp.svg');
+  background-size: auto 90%;
   background-position: right center;
   background-repeat: no-repeat;
 }
 
 .heroBanner .hero__subtitle {
-  color: #000000 !important;
+  color: #FFFFFF !important;
 }
 
 @media screen and (max-width: 996px) {
