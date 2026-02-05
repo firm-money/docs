@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Firm Finance Documentation",
   tagline: "Keep FIRM through the swings.",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.png",
 
   // Set the production url of your site here
   url: "https://docs.usf.money",
@@ -124,7 +124,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Nifty Chess, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: prismThemes.github,
+        theme: prismThemes.dracula,
         darkTheme: prismThemes.dracula,
       },
     }),
