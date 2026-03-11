@@ -9,7 +9,7 @@ const FeatureList = [
     icon: '/img/f1.svg',
     description: (
       <>
-        <Translate id="feature.redeemable.desc">Each stablecoin issued by Firm Finance is redeemable for $1 of collateral in the system.</Translate>
+        <Translate id="feature.redeemable.desc">Each stablecoin issued by Firm Money is redeemable for $1 of collateral in the system.</Translate>
       </>
     ),
   },

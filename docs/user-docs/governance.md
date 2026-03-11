@@ -5,11 +5,11 @@ sidebar_position: 5
 # Governance
 
 :::warning
-**Firm Finance currently has no governance token available. Please be cautious of scams.** 
+**Firm Money currently has no governance token available. Please be cautious of scams.**
 :::
 
-Governance do NOT have the power to:
-- Mint new FIRM or control user Troves.
+Governance does NOT have the power to:
+- Mint new USF or control user Troves.
 - Upgrade the protocol contracts.
 - Change the split or behavior of protocol interest payment fees.
 

@@ -4,11 +4,15 @@ sidebar_position: 2
 
 # Oracles
 
-Firm Finance uses Tellor oracles as its price feed solution on Saga EVM. Tellor provides decentralized, censorship-resistant price data with frequent updates to ensure accurate collateral valuations and liquidation calculations.
+Firm Money uses Tellor oracles as its price feed solution. Tellor provides decentralized, censorship-resistant price data with frequent updates to ensure accurate collateral valuations and liquidation calculations.
 
 To learn more about Tellor check out this website here: https://tellor.io/
 
-## Oracle Addresses (Saga EVM - Chain ID 5464)
+## Oracle Addresses
+
+:::info
+These oracle addresses are for the Saga EVM deployment (Chain ID 5464). Status Network oracle addresses will be updated here once available.
+:::
 
 All oracles use the shared DataBank address: `0x6f250229af8D83c51500f3565b10E93d8907B644`
 
@@ -33,11 +37,11 @@ All oracles have a 5-hour staleness threshold (4-hour heartbeat + 1-hour buffer)
 
 ## Oracle Provider
 
-- **Tellor**: Decentralized oracle network providing censorship-resistant price feeds for all Firm Finance collaterals
+- **Tellor**: Decentralized oracle network providing censorship-resistant price feeds for all Firm Money collaterals
 
 ## Usage
 
-These oracles are used as part of the PriceFeeds in the Firm Finance protocol for:
+These oracles are used as part of the PriceFeeds in the Firm Money protocol for:
 - Collateral valuation
 - Liquidation calculations
 - Risk management

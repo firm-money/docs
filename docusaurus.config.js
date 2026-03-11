@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Firm Finance Documentation",
+  title: "Firm Money Documentation",
   tagline: "Keep FIRM through the swings.",
   favicon: "img/favicon.png",
 
@@ -62,9 +62,9 @@ const config = {
       // Replace with your project's social card
       image: "img/mustang-social-card.jpg",
       navbar: {
-        // title: "Firm Finance",
+        // title: "Firm Money",
         logo: {
-          alt: "Firm Finance Logo",
+          alt: "Firm Money Logo",
           src: "/img/logo.svg",
         },
         items: [
