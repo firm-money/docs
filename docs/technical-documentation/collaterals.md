@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Collateral Parameters
 
-[Checkout out this blog](https://www.nerite.org/writing/tech-talk-collateral-ratios) on how various collateral ratio systems work.
+[Check out this blog](https://www.nerite.org/writing/tech-talk-collateral-ratios) on how various collateral ratio systems work.
 
 MCR is the primary requirement for each trove, but there are also overall global requirements for each branch.
 
@@ -19,6 +19,16 @@ MCR is the primary requirement for each trove, but there are also overall global
 
 BCR is MCR + 10% in all cases.
 
+## Collateral Assets on Status Network
+
+Firm Money supports collateral assets native to [Status Network](https://status.network/):
+
+- **ETH** — Ether, the base L1 asset
+- **wstETH** — Wrapped Staked ETH (Lido)
+- **rETH** — Rocket Pool ETH
+- **SNT** — [Status Network Token](https://status.network/), the native token of the Status ecosystem
+- **LINEA** — Coming soon
+- **sGUSD** — Coming soon
 
 ## Debt Limit
 

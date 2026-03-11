@@ -3,10 +3,14 @@ sidebar_position: 1
 
 ---
 
-# Firm Finance Protocol Contracts
+# Firm Money Protocol Contracts
 
 **Network:** Saga EVM (Chain ID: 5464)  
 **Deployment Date:** Latest  
+
+:::info
+These contract addresses are for the Saga EVM deployment. Status Network deployment addresses will be updated here once available.
+:::
 
 ## Governance
 
@@ -20,7 +24,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| FIRM Stablecoin | `0xa8b56ce258a7f55327bde886b0e947ee059ca434` | Main protocol token |
+| USF Stablecoin | `0xa8b56ce258a7f55327bde886b0e947ee059ca434` | Main protocol token |
 | CollateralRegistry | `0xf39bdcfb55374ddb0948a28af00b6474a566ac22` | Registry for all collateral types |
 | HintHelpers | `0xf2a7cab8056bcc477872b34f9be1d1d67a7d109c` | Helper contract for trove operations |
 | MultiTroveGetter | `0x651d868ef9d04ca0b2a3bf2bc299b92e58aed8c3` | Batch trove data retrieval |
@@ -180,7 +184,7 @@ These contracts are shared across all collateral branches:
 
 - All addresses are from the latest deployment on Saga EVM (Chain ID: 5464).
 - Each collateral branch operates independently with its own set of contracts, isolating risks.
-- Core contracts (FIRM Stablecoin, CollateralRegistry, HintHelpers, MultiTroveGetter) are shared across all branches.
+- Core contracts (USF Stablecoin, CollateralRegistry, HintHelpers, MultiTroveGetter) are shared across all branches.
 - Token Address shows the actual collateral token address registered in the Collateral Registry for each branch. Some tokens may be wrapped while others are native, but this address represents the exact token used by each branch.
 - Price feeds provide real-time pricing data for each collateral type with several safe-guards built in.
 - **New Contracts**: This deployment includes several new contract types:

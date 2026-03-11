@@ -5,16 +5,19 @@ sidebar_position: 1
 
 # General
 
-### What is Firm Finance?
-Firm Finance is a decentralized borrowing protocol that lets users deposit WETH, tBTC, SAGA, stATOM, KING, yETH, and yUSD as collateral, and mint the stablecoin FIRM at an interest rate depositors choose. Firm Finance is a Liquity V2 fork built specifically for the Saga EVM.
+### What is Firm Money?
+Firm Money is a decentralized borrowing protocol built for the [Status Network](https://status.network/) L2 chain. Users deposit ETH and Status Network core tokens as collateral and mint **$USF**, a USD-pegged stablecoin, at an interest rate they choose. Firm Money is a friendly fork of [Liquity V2](https://www.liquity.org).
 
-### The main use-cases for Firm Finance are:
+Using Firm Money earns [Karma](https://status.network/), the Status Network reputation and governance token.
 
-- Borrow FIRM
+### The main use-cases for Firm Money are:
+
+- Borrow USF against ETH, wstETH, rETH, SNT, and other Status Network native assets
 - 1-click multiply exposure to collateral assets
-- Earn yield by depositing FIRM in the stability pool or farming elsewhere
+- Earn yield by depositing USF in the stability pool or farming elsewhere
+- Unlock capital productivity for Status Network native assets
 
-To understand Firm Finance it's helpful to understand [Liquity](https://www.liquity.org) 
+To understand Firm Money it's helpful to understand [Liquity](https://www.liquity.org)
 
 
 :::tip
@@ -30,20 +33,21 @@ To understand Firm Finance it's helpful to understand [Liquity](https://www.liqu
 |Decentralized  |  User-set interest rates – more control over your borrowing cost. |
 |Rigorous Security|Improved redemption mechanism (lowest borrowing rate is redeemed first)|
 |Redemption of stablecoins for underlying collateral maintains the $1.00 peg no matter what| Troves are now transferable|
-|ETH Mainnet Only|V1’s code was free and open-sourced (FOSS), while with V2, Liquity will have its code set as a business source license (BUSL)|
+|ETH Mainnet Only|V1's code was free and open-sourced (FOSS), while with V2, Liquity will have its code set as a business source license (BUSL)|
 
-### Firm Finance vs Liquity V2
+### Firm Money vs Liquity V2
 | Key Differences | Description  |
 |--|--|
-| **Blockchain** | Saga EVM (Chain ID: 5464) vs Ethereum Mainnet |
-| **Collateral Types** | WETH, tBTC, SAGA, stATOM, KING, yETH, yUSD vs ETH, wstETH, rETH (Liquity V2) |
-| **No Gas Costs** | Transactions on Saga EVM don't require gas or a gas deposit |
+| **Blockchain** | [Status Network](https://status.network/) L2 vs Ethereum Mainnet |
+| **Stablecoin** | $USF vs $BOLD |
+| **Collateral Types** | ETH, wstETH, rETH, SNT, LINEA, sGUSD vs ETH, wstETH, rETH (Liquity V2) |
+| **No Gas Costs** | Transactions on Status Network are gasless |
 | **Governance** | More protocol parameters are governable: fees, LTV requirements, minimum debt, minimum interest rate, ability to add/remove collateral branches |
 | **Security Features** | Additional security features including debt limits per collateral type |
-| **EVM Version** | Built for Saga's EVM version vs Cancun EVM (Liquity V2) |
+| **Karma Integration** | Using Firm Money earns Karma, the Status L2 reputation and governance token |
 
-## Does Firm Finance have governance?
-Firm Finance has governance that can manage specific protocol parameters including:
+## Does Firm Money have governance?
+Firm Money has governance that can manage specific protocol parameters including:
 - Distributing Protocol Liquidity Incentives (PIL)
 - Directing protocol revenue to external initiatives
 - Managing fees, LTV requirements, and minimum debt thresholds
@@ -55,20 +59,11 @@ Governance operates with a manual incentive direction system, replacing Liquity'
 
 ## Other Helpful Resources:
 
-Firm Github:
+Status Network:
+https://status.network/
+
+Firm Money Github:
 https://github.com/firm-money/firm
 
-Block explorer for Saga EVM:
-https://sagaevm.sagaexplorer.io/
-
-Saga Dev docs:
-https://docs.saga.xyz/
-
-Saga EVM Subgraphs from Goldsky:
-https://goldsky.com/products/subgraphs
-
-Squid Router for bridging to Saga EVM from anywhere:
-https://app.squidrouter.com/
-
-Current Saga-EVM Tellor Price Feeds:
-https://saga-tellor-pricefeeds.vercel.app/
+Nerite (protocol home):
+https://www.nerite.org/
