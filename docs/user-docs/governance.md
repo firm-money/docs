@@ -27,7 +27,7 @@ Timelock means that these changes must be submitted transparently onchain, but d
 :::info
 The protocol is governed by a 2-of-3 multisig at:
 
-`0x92A857b519F73783E27642c0f4A5DBAc8953e66B`
+`0x0000000000000000000000000000000000000000`
 
 This safe receives all protocol interest/fees and controls key protocol parameters.
 :::
